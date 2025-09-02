@@ -207,3 +207,7 @@ marimo/_lsp/
 __marimo__/
 .DS_Store
 /archive
+/data/checkpoints
+/.vscode
+/data/results/checkpoints
+data/results/loss_landscape/matlab_config.yml

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools ~= 67.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+# include the name of the folder containing the library
+# include = ["ddsp"]
+
+[project]
+name = "dafx25-ddsp-tutorial"
+version = "0.0.1"
+authors = [
+  { name="Gloria Dal Santo", email="gloria.dalsanto@aalto.fi" },
+]
+maintainers = [
+  { name="Gloria Dal Santo", email="gloria.dalsanto@aalto.fi" },
+]
+description = "A tutorial for the DAFx25 conference on differentiable audio processing"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["audio", "signal processing", "differentiable programming", "machine learning", "optimization"]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "flamo>=0.1.13", 
+    "ipykernel", 
+    "IPython",
+]
+
+[project.urls]
+Homepage = "https://github.com/gdalsanto/dafx25-ddsp-tutorial"
+Issues = "https://github.com/gdalsanto/dafx25-ddsp-tutorial/issues"
